@@ -23,7 +23,6 @@ public class TorresDeHanoi {
         boolean contigua = false;
         boolean sobre = false;
         boolean dinamica = false;
-                
         for (String arg : args) {
             contigua = contigua || ("contigua".equalsIgnoreCase(arg) || "contígua".equalsIgnoreCase(arg));
             sobre = sobre || ("sobre".equalsIgnoreCase(arg));
@@ -39,15 +38,14 @@ public class TorresDeHanoi {
             int tDestino = 0;
             Scanner ent = new Scanner(System.in);
             String rMov = "";
-            TorresDeHanoiJogo torre;
+            TorresDeHanoiJogo torre = new TorresDeHanoiArray();
             if (contigua) {
                 torre = new TorresDeHanoiArray();
                 System.out.println("Utilizando lista contigua...");
-            }else if(dinamica){
+            }else if(dinamica) {
                 torre = new TorresDeHanoiLinked();
                 System.out.println("Utilizando lista dinâmica...");
             }
-            torre = new TorresDeHanoiArray();
             torre.IniciaJogo(retornaValor(ent, "Digite a quantidade de discos: \n"));
             while (!torre.fimDeJogo() && !"CANCEL".equals(rMov)) {
                 tOrigem = retornaValor(ent, "Digite a torre de origem: \n");
