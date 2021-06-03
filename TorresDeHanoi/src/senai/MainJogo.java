@@ -5,10 +5,17 @@ public class MainJogo {
 
     
     public static void main(String[] args) throws Exception {
-        boolean contigua = "contigua".equalsIgnoreCase(args[0]);
-        boolean sobre = "sobre".equalsIgnoreCase(args[0]);
-        boolean dinamica = "dinamica".equalsIgnoreCase(args[0]);
-        if (sobre) {
+    	boolean contigua;
+    	boolean sobre;
+    	boolean dinamica;
+    	try{
+	        contigua = "contigua".equalsIgnoreCase(args[0]);
+	        sobre = "sobre".equalsIgnoreCase(args[0]);
+	        dinamica = "dinamica".equalsIgnoreCase(args[0]);
+	    }catch(Exception e) {
+	    	throw new Exception("Não foi passado argumento");
+	    }
+    	if (sobre) {
             System.out.println("Alunos: Luiz Kischel");
             System.out.println("        Lucas Machado");
             
