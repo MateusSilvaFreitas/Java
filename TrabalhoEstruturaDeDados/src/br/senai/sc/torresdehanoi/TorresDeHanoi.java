@@ -20,7 +20,7 @@ public class TorresDeHanoi {
     
     
     public static void main(String[] args) throws Exception {
-        boolean contigua = false;
+        boolean contigua = true;
         boolean sobre = false;
         boolean dinamica = false;
         for (String arg : args) {
@@ -46,6 +46,7 @@ public class TorresDeHanoi {
                 torre = new TorresDeHanoiLinked();
                 System.out.println("Utilizando lista dinâmica...");
             }
+            torre = new TorresDeHanoiLinked();
             torre.IniciaJogo(retornaValor(ent, "Digite a quantidade de discos: \n"));
             while (!torre.fimDeJogo() && !"CANCEL".equals(rMov)) {
                 tOrigem = retornaValor(ent, "Digite a torre de origem: \n");
