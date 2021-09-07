@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Criptografador:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Criptografador_jar</output-path>
+    <root id="archive" name="Criptografador.jar">
+      <element id="module-output" name="Criptografador" />
+    </root>
+  </artifact>
+</component>

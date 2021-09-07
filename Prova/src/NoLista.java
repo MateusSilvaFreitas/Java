@@ -1,5 +1,3 @@
-package br.senai;
-
 public class NoLista {
     private Integer informacao;
     private NoLista next;

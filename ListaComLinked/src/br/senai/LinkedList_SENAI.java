@@ -184,7 +184,7 @@ public class LinkedList_SENAI{
 	}
 	private void validaPosicao(int posicao) throws Exception {
 		if(posicao < 0 || posicao > counter) {
-			throw new Exception("Posição inválida");
+			throw new Exception("Posiï¿½ï¿½o invï¿½lida");
 		}
 	}
 }
